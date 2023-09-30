@@ -4,4 +4,13 @@
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#FF808080</color>
     <color name="dark_gray">#FF404040</color>
+    <color name="blue">#3b5998</color>
+    <color name="green">#25D366</color>
+    <color name="red">#FFFF0000</color>
+    <color name="azul_claro">#2196F3</color>
+    <color name="rosa">#9C27B0</color>
+    <color name="amarillo">#FFEB3B</color>
+    <color name="naranja">#FFC107</color>
+    <color name="turquesa">#00BCD4</color>
+    <color name="cian">#008B8B</color>
 </resources>
