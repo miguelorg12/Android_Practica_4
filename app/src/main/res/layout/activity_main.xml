@@ -25,7 +25,7 @@
         android:textSize="20sp"
         android:layout_centerInParent="true"/>
     <TextView
-        android:id="@+id/text3"
+        android:id="@+id/txt3"
         android:textColor="@color/white"
         android:layout_below="@id/txt2"
         android:layout_width="wrap_content"
@@ -33,15 +33,14 @@
         android:text="Practica 4"
         android:textSize="30sp"
         android:layout_centerInParent="true"/>
-    <Button
-        android:id="@+id/btn1"
+    <TextView
+        android:id="@+id/mTextField"
+        android:textColor="@color/white"
+        android:layout_below="@id/txt3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/comenzar"
-        android:backgroundTint="@color/rosa"
-        android:layout_below="@id/text3"
-        android:layout_marginTop="15dp"
-        android:layout_centerHorizontal="true"/>
+        android:textSize="25sp"
+        android:layout_centerInParent="true"/>
 
 
 </RelativeLayout>

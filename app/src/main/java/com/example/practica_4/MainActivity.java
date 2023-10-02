@@ -6,24 +6,28 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
+import android.os.CountDownTimer;
+import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    Button btn1;
+public class MainActivity extends AppCompatActivity{
+    TextView mTextField;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btn1 = (Button)findViewById(R.id.btn1);
-        btn1.setOnClickListener(this);
-       }
+        mTextField = (TextView)findViewById(R.id.mTextField);
 
-
-    @Override
-    public void onClick(View view) {
-        Intent i = new Intent(this, MainActivity2.class);
-        startActivity(i);
-
-    }
+        new CountDownTimer(5000, 1000){
+            @Override
+            public void onTick(long millisUntilFinished) {
+               mTextField.setText("Segundos restantes: " + millisUntilFinished / 1000);
+            }
+            @Override
+            public void onFinish() {
+                Intent i = new Intent(getApplicationContext(), MainActivity2.class);
+                startActivity(i);
+            }
+        }.start();
+        }
 }
 
